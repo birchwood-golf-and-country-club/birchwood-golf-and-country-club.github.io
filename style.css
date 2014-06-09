@@ -1,11 +1,69 @@
-body {
+body, html {
+  font-family: "Roboto", sans-serif;
   line-height: 1.6em;
   font-size: 16px;
+  font-weight: 200;
+  margin: 0;
+  background-color: #F2F7F0;
+  color: #465;
 }
 
-body.splash {
-  background-color: #E3E9E1;
-  color: #465;
+div, section {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden; /* clearfix */
+}
+
+.row, .clearfix {
+  min-height: 1px;
+  clear: both;
+  overflow: hidden; /* clearfix */
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+[class*=col-] {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 480px) { .container { max-width: 480px; } }
+@media (min-width: 768px) { .container { max-width: 768px; } }
+@media (min-width: 960px) { .container { max-width: 960px; } }
+@media (min-width: 1200px) { .container { max-width: 1200px; } }
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    width: 33.3333333%;
+  }
+  .col-md-8 {
+    width: 66.666666%;
+  }
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after {
+  content: " ";
+  display: table;
 }
 
 .main-content {
@@ -24,24 +82,54 @@ body.splash {
   color: white;
 }
 
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
+.navbar {
+  position: relative;
+  min-height: 50px;
 }
 
-.navbar-default .navbar-brand {
-  font-weight: bold;
-  letter-spacing:  0.04em;
+.navbar li {
+  display: inline-block;
 }
 
-.navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-brand {
+.navbar li > a {
+  padding: 12.5px 15px;
+}
+
+.navbar-header {
+  float: left;
+  padding: 12.5px 0;
+}
+
+.navbar-nav, .navbar-brand {
+  margin: 0;
+  padding: 12.5px 0;
+  font-size: 18px;
+  line-height: 20px;
+  height: 25px;
+}
+
+.navbar-brand-primary,
+.navbar-brand-secondary {
+  font-size: 28px;
+  display: block;
+  font-family: "Noto Serif", serif;
+}
+
+.navbar-brand-secondary {
+  font-size: 0.85em;
+}
+
+.navbar a {
   color: white;
+  text-decoration: none;
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-brand:hover {
+.navbar a:hover {
   color: #f0f0f0;
+}
+
+.navbar-right {
+  float: right;
 }
 
 .masthead-image {

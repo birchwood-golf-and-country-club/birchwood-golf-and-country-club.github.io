@@ -48,6 +48,9 @@ div, section {
   .col-md-8 {
     width: 66.666666%;
   }
+  .col-md-6 {
+    width: 50%;
+  }
 }
 
 .clearfix:before,
@@ -74,10 +77,10 @@ div, section {
 }
 
 .contact-section, .about-section {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contact-section {
@@ -138,13 +141,42 @@ div, section {
 
 .masthead-image {
   background-color: #555;
-  background-image: url(images/sky.jpg); /* Open Licenced from http://littlevisuals.co/ */
-  background-image: none;
+  background-image: url(/images/banner.jpg); /* Open Licenced from http://littlevisuals.co/ */
   background-size: cover;
   background-position: top center;
 }
 
 .masthead-image-shade {
-  background-color: rgba(66, 90, 83, 0.73);
+  background-color: rgba(66, 90, 83, 0.43);
   min-height: 400px;
+}
+
+table.price-list {
+  margin: 0 0 1em;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.price-list td, table.price-list th {
+  border: 1px solid #DDD;
+  padding: 3px 5px;
+}
+
+table.price-list td {
+  width: 30%;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+
+#golfing, #motel, #camping {
+  padding: 50px 0;
+  border-top: 1px solid #DCEDD9;
+}
+
+#golfing, #camping {
+  background-color: #fafafa;
 }

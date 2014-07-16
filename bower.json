@@ -1,0 +1,21 @@
+{
+  "name": "birchwood-golf-and-country-club.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/birchwood-golf-and-country-club/birchwood-golf-and-country-club.github.io",
+  "authors": [
+    "Andy VanEe <1andyvanee@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "excolo-slider": "~1.1.0"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Excolo/Excolo-Slider",
+  "version": "1.1.0",
+  "main": "js/jquery.excoloSlider.js",
+  "description": "YAJQS - Yet another jQuery carousel. I was fed up with the good carousel plugins being commercial, so I decided to make a decent open-source variant. Installable as a NuGet package from the NuGet.org package feed.",
+  "keywords": [
+    "slider",
+    "carousel",
+    "slideshow",
+    "responsive",
+    "touch",
+    "CSS3",
+    "NuGet",
+    "HTML5"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/*.txt",
+    "**/*.nupkg",
+    "**/*.json",
+    "**/.*",
+    "images",
+    "js/!(jquery.excoloSlider.js)",
+    "css/!(jquery.excoloSlider.css)",
+    "index.html",
+    "README.markdown"
+  ],
+  "dependencies": {
+    "jquery": ">=1.9.1"
+  },
+  "homepage": "http://excolo.github.io/Excolo-Slider",
+  "authors": [
+    "Nikolaj Dam Larsen <nikolaj@impero.dk>"
+  ],
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.0",
+    "commit": "08594a2c20ebd783c515f6ab92a77e81d813a5de"
+  },
+  "_source": "git://github.com/Excolo/Excolo-Slider.git",
+  "_target": "~1.1.0",
+  "_originalSource": "excolo-slider",
+  "_direct": true
+}

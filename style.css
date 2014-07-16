@@ -34,6 +34,7 @@ div, section {
   float: left;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 100%;
 }
 
 @media (min-width: 480px) { .container { max-width: 480px; } }
@@ -50,6 +51,12 @@ div, section {
   }
   .col-md-6 {
     width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666%;
+  }
+  .col-md-7 {
+    width: 58.3333%;
   }
 }
 
@@ -91,15 +98,16 @@ div, section {
 
 .navbar {
   position: relative;
-  min-height: 50px;
+  background-color: rgba(99, 123, 106, 0.56);
 }
 
 .navbar li {
-  display: inline-block;
+  display: block;
 }
 
 .navbar li > a {
-  padding: 12.5px 15px;
+  padding: 5px 0;
+  display: block;
 }
 
 .navbar-header {
@@ -109,10 +117,9 @@ div, section {
 
 .navbar-nav, .navbar-brand {
   margin: 0;
-  padding: 12.5px 0;
+  padding: 20px 0;
   font-size: 18px;
   line-height: 20px;
-  height: 25px;
 }
 
 .navbar-brand-primary,
@@ -136,19 +143,37 @@ div, section {
 }
 
 .navbar-right {
-  float: right;
+  clear: both;
+}
+
+@media (min-width: 580px) {
+  .navbar li {
+    display: inline-block;
+  }
+  .navbar li > a {
+    padding: 2px 15px;
+    display: inline-block;
+  }
+  .navbar-right {
+    float: right;
+    clear: none;
+  }
 }
 
 .masthead-image {
   background-color: #555;
-  background-image: url(/images/banner.jpg); /* Open Licenced from http://littlevisuals.co/ */
+  background-image: url(/images/DSC_0115.JPG);
   background-size: cover;
-  background-position: top center;
+  background-position: center 80%;
 }
 
 .masthead-image-shade {
-  background-color: rgba(66, 90, 83, 0.43);
+  background-color: rgba(66, 90, 83, 0.23);
   min-height: 400px;
+}
+
+.slider {
+  border-color: #DDD;
 }
 
 table.price-list {
@@ -169,6 +194,10 @@ table.price-list td {
 img {
   max-width: 100%;
   margin-bottom: 15px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 

@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "jquery": "1.11.1",
-    "excolo-slider": "~1.1.0"
+    "excolo-slider": "~1.1.0",
+    "css3-mediaqueries-js": "*"
   }
 }

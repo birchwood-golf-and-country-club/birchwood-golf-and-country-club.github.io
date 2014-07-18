@@ -108,6 +108,10 @@ h2 {
   color: white;
 }
 
+.contact-section a {
+  color: white;
+}
+
 .navbar {
   position: relative;
   background-color: rgba(99, 123, 106, 0.56);

@@ -199,8 +199,8 @@ table.price-list {
 }
 
 table.price-list td, table.price-list th {
-  border: 1px solid #DDD;
-  padding: 3px 5px;
+  border: 0px solid #DDD;
+  padding: 2px 2px;
 }
 
 table.price-list td {
@@ -217,7 +217,7 @@ img {
 }
 
 
-#golfing, #motel, #camping {
+#golfing, #hotel, #camping {
   padding: 50px 0;
   border-top: 1px solid #DCEDD9;
 }
